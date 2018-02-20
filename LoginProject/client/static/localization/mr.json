@@ -1,0 +1,108 @@
+{
+  "registration": {
+    "fullName": "पूर्ण नाव",
+    "dob": "जन्म तारीख",
+    "gender": "लिंग",
+    "gender_male":"पुरुष",
+    "gender_female":"महिला",
+    "email": "ईमेल",
+    "mobile": "मोबाइल नंबर",
+    "username": "वापरकर्त्याचे नाव",
+    "password": "पासवर्ड",
+    "buttonType": {
+      "register": "नोंदणी करा",
+      "cancel": "रद्द करा"
+    },
+    "placeholder": {
+      "fullname":"पूर्ण नाव",
+      "email": "ईमेल",
+      "mobile": "मोबाइल नंबर",
+      "username": "वापरकर्त्याचे नाव",
+      "password": "पासवर्ड"
+    },
+    "alerts": {
+      "DATA_NOT_VALID": "Please Properly fill the data",
+      "REGISTRATION_FAIL": "Registration Failed",
+      "REGISTRATION_SUCCESS": "Registration Successfull",
+      "FAIL_TO_FIND_USERNAME_AVAILABILITY": "Failed to find username availability",
+      "USERNAME_NOT_AVAILABLE": "Username is Not Available",
+      "USERNAME_AVAILABLE": "Username is Available"
+    }
+  },
+  "logout": {
+    "button":{
+      "logout":"Logout"
+    },
+    "alerts": {
+      "LOGOUT_SUCCESS": "Logout successfull",
+      "LOGOUT_FAIL": "Failed to Logout"
+    }
+  },
+  "selectLanguage": "भाषा निवडा",
+  "forgotPassword":{
+    "username":"वापरकर्त्याचे नाव",
+    "url": "पासवर्ड विसरला?"
+  },
+  "login":{
+    "username":"वापरकर्त्याचे नाव",
+    "Reg_msg":"अद्याप खाते नाही.",
+    "Reg_SignUp":"साइनअप",
+    "Password":"पासवर्ड",
+    "OptiontoPassword":"साइनइन करण्याचा दुसरा मार्ग वापरून पहा",
+    "send_otpPhone_msg":"आपल्या नोंदणीकृत मोबाईल फोनवर OTP पाठवले जाते:",
+     "send_otpPhone_msg_email":"आपल्या नोंदणीकृत ईमेल पत्त्यावर OTP पाठवले जात आहे:",
+
+    "placeholder":{
+        "username":"आपले वापरकर्तानाव प्रविष्ट करा",
+        "Password":"आपला संकेतशब्द प्रविष्ट करा",
+        "OTP":"येथे OTP प्रविष्ट करा"
+    },
+    "button": {
+      "next": "पुढे",
+      "send_otpPhone":"मोबाइल फोनवर OTP पाठवा",
+      "send_otpEmail":"ईमेलवर OTP पाठवा",
+      "verify_otp":"OTP तपासा",
+      "resend_otp":"otp पुन्हा पाठवा",
+      "login":"लॉग इन करा",
+    "getSecretKey":"SECRETKEY मिळवा"
+  },
+  "twostep": {
+    "msg":"Google प्रमाणकर्ता मध्ये खालील QR कोड स्कॅन करा आणि OTP इन बॉक्स प्रविष्ट करा",
+    "header":"----- दोन चरण सत्यापन ----"
+  }
+  },
+  "ForgotPassword":{
+    "username":"वापरकर्त्याचे नाव",
+    "isEmail":"Send OTP on Email",
+    "enterotp":"OTP",
+    "newpass":"New Password",
+    "confirmpass":"Confirm Password",
+    "placeholder":{
+      "username":"वापरकर्त्याचे नाव",
+      "otp":"OTP",
+      "newpass":"New Password",
+      "confirmpass":"Confirm Password"
+    },
+    "button":{
+      "sendotp":"SEND OTP",
+      "cancel":"रद्द करा",
+      "verifyotp":"OTP सत्यापित करा",
+      "resendotp":"RESEND OTP",
+      "submit":"सबमिट करा"
+    },
+    "alerts":{
+      "otpsuccessme":"OTP IS SUCCESSFULLY SENT TO MOBILE AND EMAIL",
+      "otpsuccessm":"OTP IS SUCCESSFULLY SENT TO MOBILE",
+      "backtologin":"BACK TO LOGIN",
+      "usernamevalid":"वापरकर्तानाव वैध आहे",
+      "usernameblank":"USERNAME IS BLANK",
+      "usernameinvalid":"USERNAME IS INVALID",
+      "otpverify":"OTP VERIFIED SUCCESSFULLY",
+      "otpresend":"OTP HAS BEEN RESEND",
+      "nomatch":"PASSWORD AND CONFIRM PASSWORD DOES NOT MATCH",
+      "changesuccess":"PASSWORD IS SUCCESSFULLY CHNAGED",
+      "login":"PLEASE LOGIN YOURSELF",
+      "otpfail":"INVALID OTP"
+    }
+  }
+}

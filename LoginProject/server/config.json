@@ -1,0 +1,53 @@
+{
+    "serverConfig": {
+        "serverForClient": "ERA_1"
+    },
+    "email": {
+        "From": "priyankam@mkcl.org"
+    },
+    "smsGateway": {
+        "smsGatewayURLMKCL": {
+            "url": "http://hapi.smsapi.org/SendSMS.aspx",
+            "username": "MKCLOS_trans",
+            "password": "trans123",
+            "senderId": "MKCLTD",
+            "cdmaHeader": "MKCLTD"
+        }
+    },
+    "activeSMSGateWay": "smsGatewayURLMKCL",
+    "redisConfig": {
+        "host": "10.2.10.160",
+        "port": 6379
+    },
+    "emailConfig": {
+        "host" : "10.1.70.100",
+        "port" : 25,
+        "SSL" : "false"
+    },
+    "jwtToken": {
+        "passwordReset": {
+            "expiresInSeconds": 360
+        }
+    },
+    "GOOGLE_AUTH": {
+        "account" : "LoginComponent",
+	    "issuer" : "MKCL"
+    },
+    "ENCRYPT_DECRYPT":{
+        "key":"a very very very very secret key"
+    },
+    "RESTRICT_KEY":{
+        "URLkey":"qwertyuiopASDFGHJKL09876543"
+    },
+    "app_port": "3030",
+    "MONGODSN": "10.2.10.160:27017",
+    "DBNAME": "Login_RegDB",
+    "mongo":{
+   "dbconnectionip"      : "10.2.10.160:27017",
+	"dbname"                   : "Login_RegDB",
+	"collection_registration"   : "PROFILE_DETAILS",
+	"collection_logindetails"  : "LOGIN_DETAILS",
+	"collection_otpverify"      : "OTPVERIFY",
+    "collection_clientdetails" : "CLIENT_DETAILS"
+    }
+}

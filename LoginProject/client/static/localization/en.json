@@ -1,0 +1,109 @@
+{
+  "registration": {
+    "fullName": "Full Name",
+    "dob": "DOB",
+    "gender": "Gender",
+    "gender_male": "Male",
+    "gender_female": "Female",
+    "email": "Email",
+    "mobile": "Mobile",
+    "username": "Username",
+    "password": "Password",
+    "buttonType": {
+      "register": "Register",
+      "cancel": "Cancel"
+    },
+    "placeholder": {
+      "fullname": "Full Name",
+      "email": "Email Address",
+      "mobile": "Mobile Number",
+      "username": "Username",
+      "password": "Password"
+    },
+    "alerts": {
+      "DATA_NOT_VALID": "Please Properly fill the data",
+      "REGISTRATION_FAIL": "Registration Failed",
+      "REGISTRATION_SUCCESS": "Registration Successfull",
+      "FAIL_TO_FIND_USERNAME_AVAILABILITY": "Failed to find username availability",
+      "USERNAME_NOT_AVAILABLE": "Username is Not Available",
+      "USERNAME_AVAILABLE": "Username is Available"
+    }
+  },
+  "logout": {
+    "button": {
+      "logout": "Logout"
+    },
+    "alerts": {
+      "LOGOUT_SUCCESS": "Logout successfull",
+      "LOGOUT_FAIL": "Failed to Logout"
+    }
+  },
+  "selectLanguage": "Select Language",
+  
+  "forgotPassword":{
+    "username":"Username",
+    "url": "forgot password?"
+  },
+  "login":{
+    "username":"Username",
+    "Reg_msg":"Don't have an account yet.",
+    "Reg_SignUp":"SignUp",
+    "Password":"Password",
+    "OptiontoPassword":"Try Another way to Signin",
+    "send_otpPhone_msg":"OTP IS SEND TO YOUR REGISTERED MOBILEPHONE NO: ",
+     "send_otpPhone_msg_email":"OTP IS SEND TO YOUR REGISTERED EMAIL ADDRESS:",
+
+    "placeholder":{
+        "username":"Enter your Username",
+        "Password":"Enter your Password",
+        "OTP":"Enter OTP here"
+    },
+    "button": {
+      "next": "Next",
+      "send_otpPhone":"SEND OTP TO MOBILEPHONE",
+      "send_otpEmail":"SEND OTP TO EMAIL ADDRESS",
+      "verify_otp":"VERIFY OTP",
+      "resend_otp":"RESEND_OTP",
+      "login":"LOGIN",
+      "getSecretKey":"GET SECRETKEY"
+  },
+  "twostep": {
+    "msg":"scan the following QR Code in Google Authenticator and enter OTP IN BOX",
+    "header":"-----TWO STEP VERIFICATION ----"
+  }
+  },
+  "ForgotPassword":{
+    "username":"Username",
+    "isEmail":"Send OTP on Email",
+    "enterotp":"OTP",
+    "newpass":"New Password",
+    "confirmpass":"Confirm Password",
+    "placeholder":{
+      "username":"Username",
+      "otp":"OTP",
+      "newpass":"New Password",
+      "confirmpass":"Confirm Password"
+    },
+    "button":{
+      "sendotp":"SEND OTP",
+      "cancel":"CANCEL",
+      "verifyotp":"VERIFY OTP",
+      "resendotp":"RESEND OTP",
+      "submit":"SUBMIT"
+    },
+    "alerts":{
+      "otpsuccessme":"OTP IS SUCCESSFULLY SENT TO MOBILE AND EMAIL",
+      "otpsuccessm":"OTP IS SUCCESSFULLY SENT TO MOBILE",
+      "backtologin":"BACK TO LOGIN",
+      "usernamevalid":"USERNAME IS VALID",
+      "usernameblank":"USERNAME IS BLANK",
+      "usernameinvalid":"USERNAME IS INVALID",
+      "otpverify":"OTP VERIFIED SUCCESSFULLY",
+      "otpresend":"OTP HAS BEEN RESEND",
+      "nomatch":"PASSWORD AND CONFIRM PASSWORD DOES NOT MATCH",
+      "changesuccess":"PASSWORD IS SUCCESSFULLY CHNAGED",
+      "login":"PLEASE LOGIN YOURSELF",
+      "otpfail":"INVALID OTP"
+    }
+  }
+}
