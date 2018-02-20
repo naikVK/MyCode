@@ -1,0 +1,177 @@
+{
+    "serverConfig": {
+        "serverForClient": "SOLAR_2",
+        "jwtSecretKey" :"secretkey"
+    },
+    "TestingConfig": {
+        "varA": 0.6
+    },
+    "databaseNoSql": {
+        "connectionString": "mongodb://10.2.10.127:27017/MAHALABH_STG"
+    },
+    "databaseMYSQLPayment": {
+        "host": "10.2.10.199",
+        "port": "3306",
+        "user": "misuser",
+        "password": "misuser123",
+        "database": "SWARAJYA",
+        "connectionLimit": 5
+    },
+    "databaseMSSQL": {
+        "server": "test",
+        "user": "test",
+        "password": "test",
+        "database": "test_Development"
+    },
+    "otpConf": {
+        "secret": "IT_GENIUS_DYNAMIC$3Cr3tF0r0t9",
+        "otpTimeToValidate": 30
+    },
+    "emailGateway": {
+        "path": "http://localhost:8001"
+    },
+    "linkVerificationExpiryDate": {
+        "days": 2
+    },
+    "operationFor": {
+        "ALC": "ALC",
+        "OPR": "OPERATOR",
+        "ALC_OPR": "ALC_OPERATOR",
+        "CIT": "CITIZEN"
+    },
+    "passwordResetURL": {
+        "path": "http://localhost:3000/#/changePassword/"
+    },
+    "logger": {
+        "env": "dev",
+        "maxsize": 500000,
+        "maxFiles": 2
+    },
+    "user.email": "Please enter valid email address",
+    "email": {
+        "From": "priyankam@mkcl.org"
+    },
+    "environment": "development",
+    "port": 8000,
+    "host": "127.0.0.1",
+    "jwtSecretKey": "MKCL_SWARAJYA",
+    "applicationVersion": "app1",
+    "allowMultipleSessions": false,
+    "allowMultipleLogins": false,
+    "sessionDuration": 45,
+    "defaultUnlockBenifitCount": "0",
+    "smsGateway": {
+        "smsGatewayURLMKCL": {
+            "url": "http://hapi.smsapi.org/SendSMS.aspx",
+            "username": "MKCLOS_trans",
+            "password": "trans123",
+            "senderId": "MKCLTD",
+            "cdmaHeader": "MKCLTD"
+        }
+    },
+    "activeSMSGateWay": "smsGatewayURLMKCL",
+    "otp": {
+        "secretKey": "Srd3!@#"
+    },
+    "log_master": [
+        {
+            "moduleName": "Profile",
+            "operations": [
+                {
+                    "key": "save",
+                    "value": "Saved"
+                },
+                {
+                    "key": "update",
+                    "value": "Updated"
+                },
+                {
+                    "key": "active",
+                    "value": "Activated"
+                },
+                {
+                    "key": "inactive",
+                    "value": "Inactivated"
+                }
+            ]
+        },
+        {
+            "moduleName": "Payment",
+            "operations": [
+                {
+                    "key": "save",
+                    "value": "Saved"
+                },
+                {
+                    "key": "update",
+                    "value": "Updated"
+                },
+                {
+                    "key": "active",
+                    "value": "Activated"
+                },
+                {
+                    "key": "inactive",
+                    "value": "Inactivated"
+                }
+            ]
+        }
+    ],
+    "supportMail": {
+        "title": "Support Mail title",
+        "adminMailId": "swarajya@mkcl.org",
+        "subject": "Support Mail Subject",
+        "mailTemplate": "supportMail",
+        "cdnurl": "http://localhost:5000/theme/images"
+    },
+    "queriesSQL": {
+        "insertPaymentExpectancy": "INSERT INTO PAYMENT_EXPECTANCY(ADHAAR_NUMBER,AMOUNT,PAYMENT_EXPECTANCY_REF_NUMBER,PAYMENT_STATUS,SERVICE_PERIOD_START_DATE,SERVICE_PERIOD_END_DATE,PAYMENT_REASON,PAYMENT_EXPECTANCY_DATE,  PAYMENT_DESCRIPTION,CREATED_ON,CREATED_BY,SERVICE_ACQUIRED,PAYMENT_OPERATED_BY) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        "insertPaymentTransaction": "INSERT INTO PAYMENT_TRANSACTION (PAYMENT_EXPECTANCY_REF_NUMBER,CLIENT_TRANSCATION_REF_NUMBER,AMOUNT,PAYMENT_STATUS,PAYMENT_MODE_NAME,ALC_CODE,OPRATOR_ID,WALLET_ID,  GATEWAY_RESPONSE,TRANSACTION_DATE,PAYMENT_DESCRIPTION,CREATED_ON,CREATED_BY,TRANSACTION_OBJECT,PAYMENT_OPERATED_BY) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        "updatePaymentTransaction": "UPDATE PAYMENT_TRANSACTION SET UPS_TRANSCATION_REF_NUMBER = ?,UPS_TRANSACTION_ID = ?,PAYMENT_STATUS = ?,UPS_STATUS = ?,BANK_STATUS = ?,PAYMENT_MODE_NAME = ?,GATEWAY_RESPONSE = ?,ERROR_CODE = ?,ERROR_MESSAGE = ?,UPDATED_BY = ?,  UPDATED_ON = ? WHERE CLIENT_TRANSCATION_REF_NUMBER = ?",
+        "updatePaymentExpectancy": "UPDATE PAYMENT_EXPECTANCY SET PAYMENT_STATUS = ?,SERVICE_PERIOD_START_DATE = ?,SERVICE_PERIOD_END_DATE = ?,UPDATED_BY = ?,UPDATED_ON = ? WHERE PAYMENT_EXPECTANCY_REF_NUMBER = ? AND AMOUNT=?",
+        "updatePaymentExpectancyForOffer": "UPDATE PAYMENT_EXPECTANCY SET AMOUNT=?,PAYMENT_STATUS = ?,SERVICE_PERIOD_START_DATE = ?,SERVICE_PERIOD_END_DATE = ?,UPDATED_BY = ?,UPDATED_ON = ? WHERE PAYMENT_EXPECTANCY_REF_NUMBER = ?",
+        "updatePaymentExpectancyServiceAcquiredFlag": "UPDATE PAYMENT_EXPECTANCY SET SERVICE_ACQUIRED = ? WHERE ADHAAR_NUMBER = ? AND PAYMENT_STATUS = ? AND ? BETWEEN SERVICE_PERIOD_START_DATE AND SERVICE_PERIOD_END_DATE AND SERVICE_ACQUIRED = ?",
+        "insertOfferPaymentTransaction": "INSERT INTO PAYMENT_TRANSACTION (PAYMENT_EXPECTANCY_REF_NUMBER,CLIENT_TRANSCATION_REF_NUMBER,AMOUNT,PAYMENT_STATUS,PAYMENT_MODE_NAME,ALC_CODE,OPRATOR_ID,WALLET_ID,  GATEWAY_RESPONSE,TRANSACTION_DATE,PAYMENT_DESCRIPTION,CREATED_ON,CREATED_BY,TRANSACTION_OBJECT,PAYMENT_OPERATED_BY,UPDATED_BY,UPDATED_ON,OFFER_ID) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        "insertPrintSchemeInformation": "INSERT INTO PRINT_INFORMATION (USERID,REFERENCE_NUMBER,CITIZEN_DATA,CREATED_ON) VALUES (?,?,?,?)"
+    },
+    "upsConfig": {
+        "amount": 30,
+        "paymentReason": "Swarajya Benefits",
+        "paymentDescription": "Swarajya Benefits Payment",
+        "expectancyIntialStatus": "Initiated",
+        "expectancyFinalStatus": "Successful",
+        "checkUpsIsUpUrl": "https://stagingups.mkcl.org/ups/",
+        "paymentReceipt": "http://10.2.10.160:6001/client/#/payment",
+        "paymentModeOffer": "Offer",
+        "learnerOfferId": 123
+    },
+    "redisConfig": {
+        "host": "10.2.10.160",
+        "port": 6379
+    },
+    "apiCounterRequired": false,
+    "apiCounterServerId": "Swarajya",
+    "redisProjectId": "Swarajya",
+    "freeUsersRegistration": 3,
+    "latestSchemesDisplayCount": 5,
+    "cdnurltoSavePdf": "http://10.2.10.160:6001",
+    "eligibleSchemesPdfpath": "http://10.2.10.160:6001/resources/public/mkcl/SRDB/citizen/download/",
+    "allowedEditcount": 1000,
+    "databaseMYSQLPrintScheme": {
+        "host": "10.2.10.199",
+        "port": "3306",
+        "user": "misuser",
+        "password": "misuser123",
+        "database": "SWARAJYA",
+        "connectionLimit": 5
+    },
+    "masterCacheServerTTL": 86400,
+    "eKey": "3ncryp7i0n",
+    "contactUsEmailId": "swarajyasupport@mkcl.org",
+    "allowedUsersCount": "2000",
+    "jwtToken": {
+        "passwordReset": {
+            "expiresInSeconds": 360
+        }
+    }    
+}
